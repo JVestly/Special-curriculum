@@ -1,56 +1,40 @@
-# Daily dual-track plan: 10 November–18 December 2026
+# Special curriculum paper — session plan to 18 December 2026
 
-**Priority:** master's thesis every weekday, 15–20 focused hours/week. Paper only Tue/Thu/Fri 90–150 minutes each; fourth session is optional, not expected. Separate paper and thesis status should be recorded at end of each session.
+**Status:** proposed schedule. Three paper sessions a week, normally **Tuesday, Thursday and Friday**, 90–150 minutes each (approximately 5–8 focused hours/week). Thesis work is managed in the separate master's repository.
 
-**Completion rule:** each task results in a committed note, code/test artifact, explicit model decision or documented blocker with reproducer. No plan entry is automatically "completed" because its date passed.
-
-| Date | Thesis main block | Paper additional block |
+| Date | Main paper task | Definition of done |
 |---|---|---|
-| Tue 10 Nov | Thesis: define MVP, interfaces and hard limits | Paper: start 3-level LMG vs native NA parity derivation; run independent tests |
-| Wed 11 Nov | Thesis: HamiltonianModel/NoiseModel/PhysicalEncoding contracts and examples | — |
-| Thu 12 Nov | Thesis: GF(2) and direct-matrix test environment | Paper: determine precisely which parity operators could seed a physical-qubit code |
-| Fri 13 Nov | Thesis: arbitrary-input small Clifford LogicalProgram contract | Paper: finish qutrit/native comparison tests; document limitations |
-| Mon 16 Nov | Thesis: typed Pauli/stabilizer objects + tests | — |
-| Tue 17 Nov | Thesis: define CodeRequest/Code interface | Paper: SAT variables and commutation clauses |
-| Wed 18 Nov | Thesis: derive logical X/Z and independent code verifier | — |
-| Thu 19 Nov | Thesis: specify arbitrary logical-state encoder checks | Paper: rank/independence and all pair-product error conditions |
-| Fri 20 Nov | Thesis: connect known code to logical operators | Paper: discover first known code; [[5,1,3]] stretch |
-| Mon 23 Nov | Thesis: encoder prototype using a known code | — |
-| Tue 24 Nov | Thesis: decoder interface and syndrome conventions | Paper: NA-inspired error-model evidence/provenance |
-| Wed 25 Nov | Thesis: verify encoding on |0>,|1>,|+> and generic state | — |
-| Thu 26 Nov | Thesis: second Hamiltonian adapter with same interface | Paper: verify H-seed eligibility and parameter assumptions |
-| Fri 27 Nov | Thesis: integrate code object and decoder contract | Paper: fixed n,k,error seeded vs unseeded comparison |
-| Mon 30 Nov | Thesis: first encode→error→syndrome→recovery demonstration | — |
-| Tue 1 Dec | Thesis: stable shared mathematical API | Paper: benchmark runs/configurations/raw results |
-| Wed 2 Dec | Thesis: second model accepted without core rewrites | — |
-| Thu 3 Dec | Thesis: decoder logical-failure verification harness | Paper: ablation, SAT/UNSAT and timeout table |
-| Fri 4 Dec | Thesis: write draft thesis architecture Methods | Paper: freeze experiments; figures and provenance |
-| Mon 7 Dec | Thesis: two distinct supported Clifford programs | — |
-| Tue 8 Dec | Thesis: syndrome-measurement circuit prototype | Paper: Methods and model-limitations section |
-| Wed 9 Dec | Thesis: HardwareBackend gates/connectivity/cost spec | — |
-| Thu 10 Dec | Thesis: decoder ↔ syndrome-bit order/Pauli frame | Paper: final figures, captions and reproducibility review |
-| Fri 11 Dec | Thesis: circuits/decoder integration test | Paper: complete full coauthor manuscript draft |
-| Mon 14 Dec | Thesis: document one working end-to-end demonstration | — |
-| Tue 15 Dec | Thesis: native gate compilation/routing interface | Paper: mathematical proof and citation audit |
-| Wed 16 Dec | Thesis: error paths/unsupported input tests | — |
-| Thu 17 Dec | Thesis: reproduce representative thesis benchmark | Paper: build, coauthor review and final corrections |
-| Fri 18 Dec | Thesis: end-of-term progress and January backlog | Paper: submit and archive reproduction snapshot |
+| Tue 10 Nov | Derive/test three-level LMG and native Rydberg parity results | Small-matrix commutators reproduced; limits recorded |
+| Thu 12 Nov | Evaluate symmetry generators as legitimate SAT seeds | Physical qutrit vs virtual binary representation explicitly distinguished |
+| Fri 13 Nov | Finalize Hamiltonian symmetry derivation and tests | Hermiticity, parity relations, documented counterexamples |
+| Tue 17 Nov | SAT variables and generator commutation | Boolean formulation and tests |
+| Thu 19 Nov | Stabilizer independence and error-pair correctability | Independent checker for Knill–Laflamme conditions |
+| Fri 20 Nov | First reproducibly discovered small code | Known correctable code verified; UNSAT test; blockers recorded |
+| Tue 24 Nov | Document neutral-atom error mechanisms | Traceable source parameters and explicit approximations |
+| Thu 26 Nov | Validate symmetry seed compatibility | Signed commuting independent seeds; allowed physical space |
+| Fri 27 Nov | Fixed seeded/unseeded SAT comparison | Initial table at identical n,k,error criteria, solver settings |
+| Tue 1 Dec | Run controlled experiments | Reproducible parameters and raw results |
+| Thu 3 Dec | Ablations, negative cases and runtime evidence | SAT/UNSAT/timeout and quantitative comparison |
+| Fri 4 Dec | Freeze paper experimental settings | Scripts/configuration locked, figures drafted |
+| Tue 8 Dec | Write method and assumptions | Mathematical formulation and evidence documented |
+| Thu 10 Dec | Verify data, captions and limitations | Final figures and tables reproducible |
+| Fri 11 Dec | Complete full manuscript draft | Draft to coauthor for review |
+| Tue 15 Dec | Mathematical/citation audit | Independent verification and source checks |
+| Thu 17 Dec | Incorporate feedback | Submission-ready paper, no new unverified claims |
+| Fri 18 Dec | Submit and archive experiments | Final manuscript and reproducibility snapshot |
 
-## Weekly gates (paper)
-- Week Nov 10–13: physical qutrit symmetries independently tested, seed limitations written.
-- Nov 16–20: independently verified tiny SAT-discovered QECC, or explicit blocker and reduced task.
-- Nov 23–27: comparable H-seeded/unseeded SAT experiments under identical error constraints.
-- Nov 30–Dec 4: freeze experimental settings and record raw data with reproducible scripts.
-- Dec 7–11: full coauthor draft, figs and source checks.
-- Dec 14–18: corrections only; submitted manuscript and archived run configuration.
+## Weekly checkpoints
+- **Nov 10–13:** correct physical interpretation of LMG and Rydberg symmetry calculations.
+- **Nov 16–20:** functioning SAT code discovery and independent correctness checks.
+- **Nov 23–27:** documented physical error assumptions and comparable H-seeded/unseeded runs.
+- **Nov 30–Dec 4:** completed controlled experiments and frozen configuration.
+- **Dec 7–11:** coauthor draft.
+- **Dec 14–18:** review, validation and submission.
 
-## Weekly/monthly thesis plan
-- **December remainder:** demonstrated basic encoding/recovery and general logical-input contract; second Hamiltonian adapter.
-- **January 2027:** W1 freeze interfaces; W2 synthesize verified Clifford encoder; W3 two general-input logical circuits; W4 integration tests/first performance study.
-- **February:** W1 stabilizer measurement circuits; W2 coset-aware decoder; W3 complete error correction cycle; W4 code-capacity and first noisy circuit tests.
-- **March:** W1 choose supported gate backend; W2 native gate mapping and resource accounting; W3 circuit-level noisy comparison; W4 second Hamiltonian-family validation and limitations.
-- **April:** W1 frozen benchmarks; W2 ablations; W3 novelty/limitations write-up; W4 full draft and independent verification.
-- **May:** thesis figures, review, reproducibility and defense demo. Adjust once the actual university submission date is confirmed.
+### Decision points
+- If a candidate symmetry cannot seed a valid QEC code on the claimed physical degrees of freedom, report it as a mathematical benchmark rather than claiming physical realizability.
+- If full single-qubit-Pauli correction is too hard to formulate in time, first demonstrate correct small error-specific code design; distinguish its distance/coverage honestly.
+- If seeded SAT is slower, UNSAT, or not better, retain that negative result rather than changing experimental conditions to create a positive one.
 
-## Friday review questions
-What was actually verified this week? What changed in the thesis and paper deliverables? What is still conjecture? How many hours did each track take? What is the first reproducible step for Monday?
+### Friday review
+List observed results, mathematical assumptions, tests passed, open failures, elapsed paper hours and next week's first reproducible task.
