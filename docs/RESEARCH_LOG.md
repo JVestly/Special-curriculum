@@ -1,10 +1,14 @@
-# Research log
+# Special curriculum research log
 
-## 2026-11-10 — Actual first session
-Repository audit: the root contains PhysicsInformedSAT_Solver.py and rydberg_interaction.ipynb. The solver has binary symplectic utilities, Pauli commutation, a GF(2) nullspace and symmetry search; its solve() method currently raises NotImplementedError. No standalone tests were present in the root listing before this PR.
+## 2026-11-10 — Initial repository and symmetry checks
 
-**Independent small-matrix check:** five unittest test methods were executed locally with numpy for 2/3-atom three-level LMG and native driven-NA toy Hamiltonians. All five passed. Tests assess population parity commuting for LMG, broken parity with two native drives, drive-off restorations, parity dependence and restricted binary parity representations. This does NOT establish a NA→LMG reduction or a valid neutral-atom H-code.
+Repo initially contained `PhysicsInformedSAT_Solver.py` and `rydberg_interaction.ipynb`. The solver implements binary symplectic functions, Pauli-string commutation, a GF(2) nullspace and Pauli Hamiltonian symmetry search; `solve()` still raises `NotImplementedError`.
 
-Scientific scope: thesis primary all weekdays (15–20h/week), paper 3 fixed sessions/week (5–8h) ending Dec 18; same tested core contributes to both. The project charter and detailed schedule are proposed in the planning PR, not merged into main.
+An equivalent five-test direct-matrix check (numpy, independent of SAT) passed locally for LMG population parity, native three-level two-drive parity breaking, drive-off restoration, parity dependence, and restricted binary-register parity representatives. The tests were added under `tests/test_symmetry_models.py` for verification on the branch.
 
-Next experiment: separately verify the physical-subspace encoding and exact correctability formulation before treating any candidate G as a physical QECC stabilizer.
+**These tests do not demonstrate a physical LMG realization on neutral-atom hardware or a valid H-seeded code.**
+
+### Next actions
+Define precisely what operators may be used as stabilizer seeds on the claimed physical Hilbert space; then implement and independently verify SAT discovery for a known error-correcting code.
+
+Thesis schedule and compiler-specific tasks are managed separately from this paper.
