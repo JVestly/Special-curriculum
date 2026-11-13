@@ -91,6 +91,6 @@ An earlier \([[4,1]]\) code with conditional error **0.0341%** had **distance 1*
 
 ## Reproduce
 
-Install Python with NumPy. Run `python rydberg_sat_study.py` (from this directory) to enumerate and optimize; if the native Z3 library is present, the SAT cases are solved and cross-checked. Run `python -m unittest -v test_rydberg_sat_study.py` for regression checks. SMT-LIB2 cases are included and may also be solved with a standalone Z3 executable. All input Pauli weights and numerical outputs are committed.
+Install Python with NumPy. From the `Results` directory, run `python rydberg_sat_study.py` to enumerate and optimize; if the native Z3 library is present, the SAT cases are solved and cross-checked. Run `python -m unittest -v test_rydberg_sat_study.py` for regression checks. SMT-LIB2 cases are included and may also be solved with a standalone Z3 executable. All input Pauli weights and numerical outputs are committed.
 
 **Related sources:** DalFavero et al., *Satisfying Quantum Codes: Physics-Informed and Hardware-Aware Code Design with SAT Solvers*, arXiv:2608.23460 (2026); Evered et al., *Nature* **622**, 268–272 (2023); Bloqade.jl, *Hamiltonian in a 3-level system*, https://queracomputing.github.io/Bloqade.jl/dev/3-level/.
