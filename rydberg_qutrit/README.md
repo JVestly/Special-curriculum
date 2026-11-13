@@ -140,3 +140,14 @@ Results are written to `channel_results.json` and
 `rydberg_full_channel_probabilities.png` (also SVG). The older
 `rydberg_loss_probability.png` and `rydberg_occupation.png` remain useful
 intermediate single-input diagnostics, not state-independent error models.
+
+### Committed intermediate figure
+
+[Noise-budget comparison](figures/intermediate_noise_budget.svg) shows
+loss population, residual Rydberg occupation and summed nonidentity Pauli
+weights, all for the maximally mixed computational input. The standalone PNG
+figures are generated locally by the demo scripts and included in the
+conversation download archive; the SVG is the version committed to GitHub.
+
+This folder is an intermediate numerical research prototype, not a final
+experimental noise reconstruction or completed SAT-code optimization.
