@@ -16,6 +16,8 @@
 \usepackage{quantikz}
 \usepackage{braket}
 \usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.17}
 \usetikzlibrary{decorations.pathreplacing}
 \usepackage[table]{xcolor}
 \usepackage{amssymb}
@@ -726,9 +728,15 @@ independent subset may then be selected as
 candidate stabilizer generators, with the
 appropriate symmetry eigenspaces specified.
 \\\\
-Fant ingen ikke-trivielle symmetrier for Hamiltonian'en... kun identitetsoperatorer. Målet er å prøve å skrive H om til et mangepartikkel uttrykk og gjøre en transformering...
+For generic nonzero hyperfine and Rydberg drives, this binary-embedded
+Pauli commutation calculation yields only the identity (see Appendix).
+This does not exclude symmetries of restricted pulse sequences, such
+as the Rydberg-only drive used in Sec.~\ref{sec:results}.
 \subsubsection{Transforming to the Lipkin model}
-We have established that no H-codes can be retrieved from the former Hamiltonians. However, by transforming the orignal three-level Hamiltonian in Eq. \ref{eq:rydberg_three_level}, we can find non-trivial symmetries. We can prove that the three-level Rydberg atom has the same effective physics as the Lipkin-Meshkov-Glick model given by
+The absence of nontrivial embedded Pauli symmetries in the fully driven
+local Hamiltonian motivates exploring collective approximations, such as
+Lipkin--Meshkov--Glick-type models. One possible three-level collective
+Hamiltonian to investigate is
 
 \begin{equation}
 \begin{aligned}
@@ -748,10 +756,18 @@ where $T_{ab}$ denotes the transition operators, defined as
 \begin{equation*}
     T_{ab} = \sum_i^N \ket{a_i}\bra{b_i}.
 \end{equation*}
+The collective Hamiltonian is not shown here to be exactly equivalent to
+Eq.~\eqref{eq:rydberg_three_level}; any such reduction and its extra
+symmetries require separate derivation. The numerical results below use
+the Rydberg-only Hamiltonian, not this collective model.
 
-\section{Methodology}
-\section{Discussion}
-\section{Conclusion and Future Outlook}
+% The experimentally informed SAT study is kept separate for easier revision.
+% Compile from Results/ or from the repository root:
+\IfFileExists{sections/rydberg_experiments.tex}{%
+  \input{sections/rydberg_experiments.tex}%
+}{%
+  \input{Results/sections/rydberg_experiments.tex}%
+}
 \appendix
 \section{Pauli Decomposition of the Rydberg Hamiltonian}
 \label{app:pauli_decomposition}
