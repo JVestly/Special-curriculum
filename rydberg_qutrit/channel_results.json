@@ -1,0 +1,12 @@
+{
+  "source": "Evered et al., Nature 2023 (DOI 10.1038/s41586-023-06481-y)",
+  "assumptions": "Reduced two-atom model; three Rydberg decay branches only; noiseless polar reference",
+  "sum_pauli_weights": 0.9988938869313122,
+  "q_II": 0.9988344782605656,
+  "p_residual_Rydberg": 0.00007324699391171477,
+  "p_sink": 0.0010328660720131848,
+  "p_total": 0.9999999999972371,
+  "kraus_count": 24,
+  "max_trace_preservation_error": 1.1050049764094183e-11,
+  "min_choi_eigenvalue": -8.143283838772287e-16
+}
