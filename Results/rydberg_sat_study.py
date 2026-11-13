@@ -270,4 +270,4 @@ def study(source_file,folder):
 if __name__=='__main__':
     source=ROOT/'rydberg_pair_pauli_weights.json'
     if not source.exists(): source=ROOT/'calibrated_channel_kraus.npz'
-    study(source,ROOT/'SAT_results')
+    study(source,ROOT/'SAT_Rydberg')
