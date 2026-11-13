@@ -151,3 +151,8 @@ conversation download archive; the SVG is the version committed to GitHub.
 
 This folder is an intermediate numerical research prototype, not a final
 experimental noise reconstruction or completed SAT-code optimization.
+
+
+## November 13: state-dependent decay and coherence-noise study
+
+See [INTERMEDIATE_NOISE_RESULTS.md](INTERMEDIATE_NOISE_RESULTS.md) for the state-by-state Lindblad diagnostics, the measured-T2*-motivated Gaussian-detuning **assumption**, and the resulting full-channel/Pauli comparison. Reproduce the simulation using [rydberg_noise_diagnostics.py](rydberg_noise_diagnostics.py). This is a reduced physical model and the results should not be interpreted as a measured gate fidelity or a calibrated full noise budget.
