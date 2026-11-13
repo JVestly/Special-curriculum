@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-13",
+  "status": "intermediate matched 4-qubit code-capacity simulation",
+  "hardware_informed": {
+    "generators": [
+      "XXXX",
+      "ZYII",
+      "XXYZ"
+    ],
+    "conditional_logical_error": 0.0003786663689902529
+  },
+  "hardware_informed_h_seed": {
+    "generators": [
+      "XXXX",
+      "ZZII",
+      "XXYZ"
+    ],
+    "conditional_logical_error": 0.0003786803286057193
+  },
+  "uniform_no_h_seed": {
+    "generators": [
+      "XXII",
+      "IIXX",
+      "ZZZZ"
+    ],
+    "conditional_logical_error_when_evaluated_on_hardware": 0.001168124288568484,
+    "relative_improvement_of_informed_against_this_code": 0.6758338366080017
+  },
+  "uniform_optimal_ties": {
+    "count": 324,
+    "best_hardware_error": 0.0003786663689902529,
+    "median_hardware_error": 0.0003859042187211895,
+    "mean_hardware_error": 0.0005202528759210019,
+    "worst_hardware_error": 0.001168124288568484,
+    "tied_codes_matching_hardware_optimum": 64
+  },
+  "physical_two_pair_computational_survival": 0.9969320811824534,
+  "pessimistic_failure_proxy": {
+    "informed": 0.0034454234688579,
+    "uninformed_CSS": 0.004232459395628996
+  },
+  "constraints": {
+    "n": 4,
+    "k": 1,
+    "minimum_distance": 2,
+    "correct_all_single_Z": false,
+    "seeding_required_uninformed": false
+  },
+  "assumptions": [
+    "Two independent pair channels",
+    "Evaluation under same Rydberg-derived Pauli probabilities",
+    "Pauli-only conditional ML decoder; no leakage recovery",
+    "Uniform baseline holds identity and total error rates constant; redistributes 15 nonidentity pair errors equally"
+  ],
+  "note": "Uniform design has multiple exact optima, including codes matching the Rydberg-informed optimum; no guaranteed advantage over all uninformed choices."
+}
