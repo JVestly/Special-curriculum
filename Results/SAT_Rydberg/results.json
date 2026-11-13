@@ -1,0 +1,189 @@
+{
+  "unseeded": {
+    "seed": [],
+    "total_stabilizers_considered": 11475,
+    "hard_kl_feasible": 768,
+    "best": {
+      "generators": [
+        "XXII",
+        "YZXX",
+        "IIZY"
+      ],
+      "distance": 2,
+      "group": [
+        "IIII",
+        "XXII",
+        "YZXX",
+        "ZYXX",
+        "IIZY",
+        "XXZY",
+        "YZYZ",
+        "ZYYZ"
+      ],
+      "decoder_coset_representatives": {
+        "0": "IIII",
+        "1": "YIXX",
+        "2": "IIZI",
+        "3": "ZIII",
+        "4": "IIIX",
+        "5": "ZIZX",
+        "6": "IIZX",
+        "7": "YIYI"
+      },
+      "success_unconditional": 0.9965473754999069,
+      "failure_unconditional": 0.000384705682546449,
+      "logical_failure_conditional_on_computational_survival": 0.0003858895603902651,
+      "detected_or_stabilizer_prob": 0.9968984808193595
+    },
+    "smt_status": "sat",
+    "smt_generators": [
+      "YXXZ",
+      "ZXXY",
+      "ZYYY"
+    ]
+  },
+  "seed_ZZII": {
+    "seed": [
+      "ZZII"
+    ],
+    "total_stabilizers_considered": 315,
+    "hard_kl_feasible": 8,
+    "best": {
+      "generators": [
+        "IIXX",
+        "ZZII",
+        "XXYZ"
+      ],
+      "distance": 2,
+      "group": [
+        "IIII",
+        "IIXX",
+        "ZZII",
+        "ZZXX",
+        "XXYZ",
+        "XXZY",
+        "YYYZ",
+        "YYZY"
+      ],
+      "decoder_coset_representatives": {
+        "0": "IIII",
+        "1": "XXYI",
+        "2": "IXII",
+        "3": "XIYI",
+        "4": "ZIII",
+        "5": "IIZI",
+        "6": "ZXII",
+        "7": "YIYI"
+      },
+      "success_unconditional": 0.9965473608865465,
+      "failure_unconditional": 0.00038472029590685963,
+      "logical_failure_conditional_on_computational_survival": 0.0003859042187212452,
+      "detected_or_stabilizer_prob": 0.9969095774985909
+    },
+    "smt_status": "sat",
+    "smt_generators": [
+      "ZZII",
+      "IIXX",
+      "XXZY"
+    ]
+  },
+  "seed_ZZII_IIZZ": {
+    "seed": [
+      "ZZII",
+      "IIZZ"
+    ],
+    "total_stabilizers_considered": 15,
+    "hard_kl_feasible": 0,
+    "best": null,
+    "smt_status": "unsat",
+    "smt_generators": null
+  },
+  "weighted_only_d2": {
+    "unseeded": {
+      "seed": [],
+      "distance2_candidates": 2268,
+      "smt_status": "sat",
+      "optimal_generators": [
+        "XXXX",
+        "ZYII",
+        "XXYZ"
+      ],
+      "optimal_distance": 2,
+      "success_unconditional": 0.9965545765311421,
+      "logical_failure_conditional_on_computational_survival": 0.0003786663689902529,
+      "corrects_all_single_Z": false
+    },
+    "seed_ZZII": {
+      "seed": [
+        "ZZII"
+      ],
+      "distance2_candidates": 36,
+      "smt_status": "sat",
+      "optimal_generators": [
+        "XXXX",
+        "ZZII",
+        "XXYZ"
+      ],
+      "optimal_distance": 2,
+      "success_unconditional": 0.9965545626143536,
+      "logical_failure_conditional_on_computational_survival": 0.0003786803286057193,
+      "corrects_all_single_Z": false
+    },
+    "seed_ZZII_IIZZ": {
+      "seed": [
+        "ZZII",
+        "IIZZ"
+      ],
+      "distance2_candidates": 4,
+      "smt_status": "sat",
+      "optimal_generators": [
+        "ZZII",
+        "XXYX",
+        "XXXY"
+      ],
+      "optimal_distance": 2,
+      "success_unconditional": 0.996289560562344,
+      "logical_failure_conditional_on_computational_survival": 0.0006444978873057223,
+      "corrects_all_single_Z": false
+    }
+  },
+  "setup": {
+    "n": 4,
+    "k": 1,
+    "r": 3,
+    "hard_error_set": [
+      "IIII",
+      "ZIII",
+      "IZII",
+      "IIZI",
+      "IIIZ"
+    ],
+    "noise_source": "/mnt/data/rydberg_pair_pauli_weights.json",
+    "pair_probability_total": 0.9984648622672976,
+    "two_pair_computational_survival": 0.9969320811824534,
+    "two_pair_outside_computational": 0.0030679188175466443,
+    "assumption": "Two independent pair channels (atoms 1-2 and 3-4), identical pulse; not a measured four-atom channel.",
+    "source_pauli_weights": {
+      "II": 0.9975708285492755,
+      "IX": 1.1213229015286904e-05,
+      "IY": 1.1213229015287602e-05,
+      "IZ": 0.0002769255426770645,
+      "XI": 1.1213229015278273e-05,
+      "XX": 9.709195227125537e-10,
+      "XY": 9.709195227119345e-10,
+      "XZ": 1.1199685157723887e-05,
+      "YI": 1.1213229015280748e-05,
+      "YX": 9.709195227124565e-10,
+      "YY": 9.70919522712018e-10,
+      "YZ": 1.1199685157721824e-05,
+      "ZI": 0.00027692554267697375,
+      "ZX": 1.1199685157730233e-05,
+      "ZY": 1.1199685157730875e-05,
+      "ZZ": 0.0002505270922979141
+    },
+    "n_stabilizer_groups": 11475,
+    "minimum_distance": 2,
+    "runtime_seconds": 5.0109315849995255,
+    "seed_interpretation": "The 3-level Rydberg-only drive has exact Q_i=diag(1,-1,-1) symmetries (when hyperfine drive is off); on the computational |0>,|1> subspace, Q_1 Q_2 maps to ZZII and Q_3 Q_4 maps to IIZZ. Jumps can break these symmetries; the additional discovered generators need not commute with H."
+  }
+}
