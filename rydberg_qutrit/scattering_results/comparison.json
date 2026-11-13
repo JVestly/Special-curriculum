@@ -1,0 +1,16 @@
+{
+  "baseline_decay_plus_T2star": {
+    "identity": 0.9979087536606502,
+    "nonidentity": 0.0008248758426348181,
+    "rydberg": 0.00023363726414162657,
+    "loss": 0.0010327332296615446
+  },
+  "with_intermediate_scattering_return_to_1": {
+    "identity": 0.997638516408965,
+    "nonidentity": 0.0009346347774357577,
+    "rydberg": 0.000394094395614802,
+    "loss": 0.0010327544179836935
+  },
+  "scattering_target_not_calibrated": true,
+  "total_change_in_nonidentity_pp": 0.010975893480093962
+}
