@@ -73,7 +73,7 @@ class TestRydbergSAT(unittest.TestCase):
         self.assertIsNone(gens)
 
     def test_regression_results(self):
-        r=json.loads((ROOT/'SAT_results/results.json').read_text())
+        r=json.loads((ROOT/'SAT_Rydberg/results.json').read_text())
         self.assertEqual(r['unseeded']['hard_kl_feasible'],768)
         self.assertEqual(r['seed_ZZII']['hard_kl_feasible'],8)
         self.assertEqual(r['seed_ZZII_IIZZ']['hard_kl_feasible'],0)
